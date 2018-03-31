@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url('../fonts/Open_Sans/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+
+body{
+
+    font-family: 'Open Sans Light', sans-serif;
+    font-size:14px;
+
+}
+
+
+.heading{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(63,81,181);
+
+}
+
+.box3, .box1 {
+    display:flex;
+    box-sizing: border-box;
+    min-width:100%;
+}
+
+.box1 {
+    max-height:95%;
+    flex:1 1 95%;
+}
+
+.box3 {
+    height:5%;
+    max-height:5%;
+    flex:1 1 5%;
+    border-top: 1px solid rgba(11,11,12,0.09);
+}
+
+a{
+    font-size:14px;
+    color:rgb(63,81,181);
+    text-decoration: none;
+}
+a:visited{
+    font-size:14px;
+    color:rgb(63,81,181);
+    text-decoration: none;
+
+}
+
+
+body{
+    font-size:14px;
+    height:100%;
+}
+
+.selectedIndex{
+    border-left:6px solid rgb(16,108,200);
+    background-color:rgba(11,11,12,0.09)
+}
+
+md-toolbar{
+    min-height:45px;
+    max-height:45px;
+    background-color: rgb(16,108,200);
+}
+
+.md-tab {
+    float: right;
+    margin:0px;
+    line-height: 24px;
+    padding-top:5px;
+
+}
+
+md-pagination-wrapper {
+    left: initial;
+    right: 0;
+}
+
+.button{
+    background-color: rgb(16,108,200);
+}
+
+@media only screen
+and (max-width: 736px) {
+    .mobile {
+        display:block;
+    }
+    .desktop {
+        display:none;
+    }
+    .tablet {
+        display:none;
+    }
+}
+
+@media only screen
+and (min-width: 736px)
+and (max-width: 1200px){
+    .tablet {
+        display:block;
+    }
+    .desktop {
+        display:none;
+    }
+    .mobile {
+        display:none;
+    }
+}
+
+@media only screen
+and (min-width: 1200px) {
+    .desktop {
+        display:block;
+    }
+    .tablet {
+        display:none;
+    }
+    .mobile {
+        display:none;
+    }
+}

@@ -1,0 +1,126 @@
+
+
+
+
+    <md-content  layout="column" flex>
+
+        <div ng-switch="view" >
+            <div ng-switch-when="filters" >
+
+                <md-card >
+                <md-content layout-padding class="md-padding">
+                    <div>
+                        <span class="heading">PATIENT CARE RESOURCES FILTERS</span>
+                        <form name="adultCareForm">
+
+
+
+
+
+
+
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Sub Document Type</label>
+                                    <md-select ng-model="documentType">
+                                        <md-option value="Clinical">
+                                            Drug Information
+                                        </md-option>
+                                        <md-option value="Nursing">
+                                            Lab
+                                        </md-option>
+                                        <md-option value="Ordering Sets">
+                                            Imaging
+                                        </md-option>
+                                    </md-select>
+                                </md-input-container>
+
+                            </div>
+
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Collection</label>
+                                    <md-select ng-model="documentType">
+                                        <md-option value="Pregnancy">
+                                            Drug Bulletin - Regional
+                                        </md-option>
+                                        <md-option value="Advice">
+                                            Drug FAQs for Members
+                                        </md-option>
+                                        <md-option value="Asthma">
+                                            Home Infusion Pharmacy
+                                        </md-option>
+                                    </md-select>
+                                </md-input-container>
+
+                            </div>
+
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Sub Collection</label>
+                                    <md-select ng-model="documentType">
+                                        <md-option value="Complications">
+                                            Infusion Patient Education
+                                        </md-option>
+                                        <md-option value="Labor and Delivery">
+                                            Patient Medication Information Sheets
+                                        </md-option>
+                                        <md-option value="Substance Abuse">
+                                            Substance Abuse
+                                        </md-option>
+                                    </md-select>
+                                </md-input-container>
+
+                            </div>
+
+
+
+                            <div layout="row">
+                            <div>
+                                <md-button class="md-raised md-primary" ng-click="search()" type="submit" style=" background-color: rgb(16,108,200);">Submit</md-button>
+                            </div>
+
+                            <div>
+                                <md-button class="md-raised md-secondary" ng-click="search()" type="reset" >Clear</md-button>
+                            </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </md-content>
+                </md-card>
+            </div>
+            <div ng-switch-when="content">
+                <md-list >
+
+                    <div  layout="row" >
+                        <md-button class="md-secondary md-raised" ng-click="back()" style="margin-top:0px;height:16px"  >
+                            <md-icon  ng-bind="'filter_list'"></md-icon> Filters
+                        </md-button> <span  class="heading" style="padding-top:5px;padding-left:5px;font-weight:500" hide-xs>PATIENT CARE RESOURCES&nbsp; > &nbsp; LAB INFORMATION  </span>
+
+
+
+
+                    </div>
+
+                    <!-- <md-subheader class="heading">
+                     </md-subheader>-->
+
+                    <md-divider ></md-divider>
+                    <md-list-item ng-repeat="item in items" class="md-2-line">
+
+                        <div class="md-list-item-text" class="md-padding" layout="column">
+                            <p><a href="#"><b>{{item.productName}}</b></a></p>
+                            <p>{{item.productDesc}}</p>
+
+
+                        </div>
+                        <md-divider ></md-divider>
+                    </md-list-item></md-list>
+            </div>
+        </div>
+      </md-content>
+
+
+
+
